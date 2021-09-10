@@ -1,8 +1,0 @@
-db source path
-C:\Users\Haniel Chang\Bootcamp\workspace\projects\u-develop-it\db\db.sql
-
-schema source path
-C:\Users\Haniel Chang\Bootcamp\workspace\projects\u-develop-it\db\schema.sql
-
-seeds source path
-C:\Users\Haniel Chang\Bootcamp\workspace\projects\u-develop-it\db\seeds.sql
