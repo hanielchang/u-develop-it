@@ -4,6 +4,7 @@
 
 DROP TABLE IF EXISTS candidates;
 DROP TABLE IF EXISTS parties;
+DROP TABLE IF EXISTS voters;
 
 -- Any dependent tables, such as candidates, which relies on the parties table, 
 -- should be created towards the end. Make all non-dependent tables first.
@@ -11,6 +12,14 @@ CREATE TABLE parties (
   id INTEGER AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(50) NOT NULL,
   description TEXT
+);
+
+CREATE TABLE voters (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  first_name VARCHAR(30) NOT NULL,
+  last_name VARCHAR(30) NOT NULL,
+  email VARCHAR(50) NOT NULL,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE candidates (
