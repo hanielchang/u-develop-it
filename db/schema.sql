@@ -32,6 +32,8 @@ CREATE TABLE candidates (
   CONSTRAINT fk_party FOREIGN KEY (party_id) REFERENCES parties(id) ON DELETE SET NULL
 );
 
+-- Since votes has constraints that reference voters and candidates,
+-- it must be created last.
 CREATE TABLE votes (
   id INTEGER AUTO_INCREMENT PRIMARY KEY,
   voter_id INTEGER NOT NULL,
